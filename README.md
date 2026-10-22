@@ -11,6 +11,11 @@ Communication breakdowns caused by out-of-scope queries severely degrade user sa
 The experiments use the **CLINC150 dataset**, which contains 150 in-scope intents and a dedicated subset of out-of-scope (OOS) queries. The dataset is automatically downloaded via the Hugging Face `datasets` library during execution.
 
 ## Requirements
-To install the necessary dependencies, run:
-```bash
-pip install -r requirements.txt
+The code is designed to run in a Jupyter/Colab environment. The required libraries are:
+`transformers`, `datasets`, `scikit-learn`, `torch`, `numpy`
+
+## How to Run
+1. Open the `main.ipynb` notebook.
+2. The notebook is fully self-contained. Run the first cell to install the dependencies.
+3. Run the second cell to execute the training and evaluation pipeline for both the SVM baseline and the DistilBERT model.
+4. The output will display the Accuracy metrics for both models. For optimal training speed with the Transformer model, it is recommended to run this notebook in Google Colab with a GPU runtime enabled.
