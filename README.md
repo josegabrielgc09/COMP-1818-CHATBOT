@@ -34,6 +34,11 @@ To ensure an error-free evaluation pipeline as required by the coursework brief:
    - Train and evaluate the TF-IDF + SVM baseline.
    - Fine-tune and evaluate the DistilBERT model.
    - Output the final Accuracy, Precision, Recall, and F1 metrics for comparison.
+# COMP1818 - Intent Classification and Out-of-Scope Prediction
+
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/josegabrielgc09/COMP-1818-CHATBOT/blob/main/main.ipynb)
+
+This repository contains the practical implementation...
 
 ## Author
 * **Jose Gabriel Gutierrez Claros** (ID: 001390237)
