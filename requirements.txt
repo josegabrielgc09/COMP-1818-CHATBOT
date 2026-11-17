@@ -1,17 +1,10 @@
 # Core Machine Learning & Data Processing
-
-scikit-learn==1.2.2
-
+scikit-learn
 numpy
-
 pandas
 
-
-
 # Deep Learning & NLP
-
-torch==2.0.1
-
-transformers==4.30.0
-
+torch
+transformers
 datasets
+accelerate
