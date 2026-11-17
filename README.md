@@ -1,12 +1,14 @@
 # COMP1818 - Intent Classification and Out-of-Scope Prediction
 
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/josegabrielgc09/COMP-1818-CHATBOT/blob/main/main.ipynb)
+
 This repository contains the practical implementation for the **COMP1818 Artificial Intelligence Applications** coursework (University of Greenwich). The project investigates a Natural Language Understanding (NLU) pipeline capable of joint intent classification and out-of-scope (OOS) prediction.
 
 ## Project Overview
 
 Communication breakdowns caused by out-of-scope queries severely degrade user satisfaction in conversational agents. This project compares two approaches:
-* **Baseline Model**: Support Vector Machine (SVM) using TF-IDF feature extraction.
-* **Proposed Model**: Fine-tuned DistilBERT (`distilbert-base-uncased`) for sequence classification.
+- **Baseline Model**: Support Vector Machine (SVM) using TF-IDF feature extraction.
+- **Proposed Model**: Fine-tuned DistilBERT (`distilbert-base-uncased`) for sequence classification.
 
 ## Dataset
 
@@ -15,28 +17,26 @@ The experiments use the **CLINC150 dataset** (Larson et al., 2019), which contai
 ## Requirements
 
 The codebase is structured as a self-contained Jupyter Notebook, optimized for execution in Google Colab (with GPU acceleration for DistilBERT). The required dependencies are:
-* `transformers`
-* `datasets`
-* `scikit-learn`
-* `torch`
-* `numpy`
-* `pandas`
+- `transformers`
+- `datasets`
+- `scikit-learn`
+- `torch`
+- `numpy`
+- `pandas`
+- `accelerate`
 
 ## How to Run the Code
 
 To ensure an error-free evaluation pipeline as required by the coursework brief:
-1. Open the `main.ipynb` file in **Google Colab**.
+1. Open the `main.ipynb` file in **Google Colab** using the badge above.
 2. Go to `Runtime` -> `Change runtime type` and select **GPU** (T4 or higher).
-3. Run all cells sequentially (`Runtime` -> `Run all`). 
+3. Run all cells sequentially (`Runtime` -> `Run all`).
 4. The notebook will automatically:
    - Install the required dependencies.
    - Download the CLINC150 dataset.
    - Train and evaluate the TF-IDF + SVM baseline.
    - Fine-tune and evaluate the DistilBERT model.
-   - Output the final Accuracy, Precision, Recall, and F1 metrics for comparison.
-# COMP1818 - Intent Classification and Out-of-Scope Prediction
-
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/josegabrielgc09/COMP-1818-CHATBOT/blob/main/main.ipynb)
+   - Output the final Accuracy metrics for comparison.
 
 This repository contains the practical implementation...
 
